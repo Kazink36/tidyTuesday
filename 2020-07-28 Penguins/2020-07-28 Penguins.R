@@ -1,4 +1,6 @@
 library(tidyverse)
+library(magick)
+library(cowplot)
 library(grid)
 library(gridExtra)
 
