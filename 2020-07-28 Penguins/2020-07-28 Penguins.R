@@ -57,5 +57,6 @@ img2 <- ggdraw() + draw_image(img2)
 png("palmer_penguins.png",width = 30,height = 23, units = "cm",res = 300)
 grid.arrange(h1,h2,h3,h4,img,img2,nrow = 2,heights = c(2,1),
              layout_matrix = rbind(c(1,2,3,4),c(5,6,6,6)),
-             top = textGrob("Features of Palmer Penguins from 2007 to 2009 by Island", gp=gpar(fontsize=20,font=8,fontfamily = "Charter")))
+             top = textGrob("Features of Palmer Penguins from 2007 to 2009 by Island",
+                            gp=gpar(fontsize=20,font=8,fontfamily = "Charter")))
 dev.off()
